@@ -1,8 +1,11 @@
-# MP2021-22_Svoboda-Ondrej_Sjednoceni-uzivatelskych-rozhrani-www-aplikaci-PraCe-a-PraXe
+# Sjednocení uživatelských rozhraní www aplikací PráCe a PraXe
+MP2021-22_Svoboda-Ondrej_Sjednoceni-uzivatelskych-rozhrani-www-aplikaci-PraCe-a-PraXe
 
+---------------------------
 ### Autor  Ondřej Svoboda
 ### Obor Technické lyceum
 ### Školní rok 2021/2022
+---------------------------
 
 ## ÚVOD
 Práce se zabývá optimalizací uživatelského rozhraní školní aplikace pro vedení a správu dlouhodobých prací. Dále také úpravou UX aplikace pro evidenci praxí, tak aby mělo stejné vizuální a funkční prvky. Měl by vzniknout katalog „komponentů“, neboli prvků, které budou využitelné při tvorbě dalších školních aplikací.
