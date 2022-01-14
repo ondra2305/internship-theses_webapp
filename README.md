@@ -12,6 +12,8 @@ Práce se zabývá optimalizací uživatelského rozhraní školní aplikace pro
 
 **Odkaz na práci:** https://pslib-my.sharepoint.com/:w:/g/personal/ondsvob018_pslib_cz/Eca0yFkxLulLmg17ASQ24nkBYmf0RXiu5hRUszqInEhbxQ?e=jgTo8z
 
+**Odkaz na XD návrh designu aplikací:** https://pslib-my.sharepoint.com/:u:/g/personal/ondsvob018_pslib_cz/Efnr2Eno4sxKubsBrqsqIlgBn__OCNKWhw2SKlbIAcDcXg?e=duPnHp
+
 **Projektový záměr:** https://pslib-my.sharepoint.com/:w:/g/personal/ondsvob018_pslib_cz/ER5T02S0WfRMikvsr5yIrsgBwx4AT0vyLUYGV9VngvzhLA?e=Jbegef
 
 **Ganntův graf:** https://pslib-my.sharepoint.com/:b:/g/personal/ondsvob018_pslib_cz/EeR71MSJZCdLs8af81dgrLkBipLHKprUtJppyXkasjlL4A?e=U7XrKb
