@@ -1,23 +1,27 @@
-import Header from "./components/Header"
-
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import React from "react";
-
+import { BrowserRouter as Router, Routes, Route}
+    from 'react-router-dom';
+import Home from './pages/home';
+import Login from './pages/login';
+import Internship from './pages/internship';
+import Diary from './pages/diary';
+import Bonus from './pages/bonus';
+import Map from './pages/map';
+  
 function App() {
-  return (
-    <div className="container">
-      <Header />
-    </div>
-  );
+return (
+    <Router>
+    <Routes>
+        <Route exact path='/' exact element={<Login />} />
+        <Route path='/home' exact element={<Home />} />
+        <Route path='/internship' element={<Internship/>} />
+        <Route path='/diary' element={<Diary/>} />
+        <Route path='/map' element={<Map/>} />
+        <Route path='/bonus' element={<Bonus/>} />
+    </Routes>
+    </Router>
+);
 }
-
-//Test React.Component
-
-//class App extends React.Component {
-//  render() {
-//    return <h1>React Správa Praxí</h1>;
-//  }
-//}
-
+  
 export default App;
