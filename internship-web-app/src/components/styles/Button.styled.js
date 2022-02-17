@@ -5,13 +5,20 @@ export const StyledButton = styled.button`
     border: 1px solid grey;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    font-size: 20px;
-    padding: 12px 20px;
+    font-size: 16px;
     background-color: #2F65B0;
     color: white;
     margin: 1em 0;
 
     &:hover {
-        opacity: 0.8;
+        background-color: #357BC2
+    }
+
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 12px 20px;
+        color: inherit;
     }
 `

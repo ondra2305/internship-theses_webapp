@@ -13,6 +13,19 @@ const GlobalStyles = createGlobalStyle`
 
     p {
         line-height: 1;
+        margin: .5rem .5rem;
+    }
+
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 36px;
+        margin: 1rem 0;
     }
 `
 

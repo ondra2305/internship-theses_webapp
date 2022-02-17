@@ -1,26 +1,47 @@
 import React from 'react'
 import { StyledHeader } from "./styles/Header.styled"
-import { Nav } from "./styles/Header.styled"
+import { Nav } from "./styles/NavElements.styled"
 import { Logo } from "./styles/Logo.styled"
 import { Menu } from "./styles/NavElements.styled"
 import { MenuLink } from "./styles/NavElements.styled"
 import { Container } from './styles/Container.styled'
+import { SearchBox } from './styles/SearchBox.styled'
+import { StyledButton } from './styles/Button.styled'
+import { Box } from "./styles/Box.styled"
+import { Block } from "./styles/Block.styled"
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 export default function Header() {
   return (
     <StyledHeader>
         <Container>
             <Nav>
-                <Logo src="./images/logo.svg" alt="PSLIB logo"/>
-                <Container>
-                    <h1>Správa PraXí</h1>
-                    <Menu>
-                        <MenuLink to="/home"><a href="../pages/home.js"><i class="fa-solid fa-house"></i> Domů</a></MenuLink>
-                        <MenuLink to="/internship"><a href="../pages/internship.js"><i class="fa-solid fa-briefcase"></i> Praxe</a></MenuLink>
-                        <MenuLink to="/diary"><a href="../pages/diary.js"><i class="fa-solid fa-book-open"></i> Deník</a></MenuLink>
-                        <MenuLink to="/bonus"><a href="../pages/bonus.js"><i class="fa-solid fa-star"></i> Zlepšováky</a></MenuLink>
-                    </Menu>
-                </Container>
+                <Box>
+                    <div>
+                        <h1><Logo src="./images/logo.svg" alt="PSLIB logo"/> Správa PraXí</h1>
+                        <Menu>
+                            <MenuLink to="/home"><FontAwesomeIcon icon={solid('house')} /> Domů</MenuLink>
+                            <MenuLink to="/internship"><FontAwesomeIcon icon={solid('briefcase')} /> Praxe</MenuLink>
+                            <MenuLink to="/diary"><FontAwesomeIcon icon={solid('book-open')} /> Deník</MenuLink>
+                            <MenuLink to="/bonus"><FontAwesomeIcon icon={solid('star')} /> Zlepšováky</MenuLink>
+                            <MenuLink to="/map"><FontAwesomeIcon icon={solid('map')} /> Mapa</MenuLink>
+                        </Menu>
+                    </div>
+                </Box>
+                <Block>
+                    <Box>   
+                        <div>
+                            <p>Jan Novák</p>
+                            <p>user@pslib.cz</p>
+                        </div>
+                        <StyledButton><MenuLink to="/">Odhlásit se</MenuLink></StyledButton>
+                    </Box>
+                    <Box>
+                        <SearchBox><input placeholder="Hledat" name="hledat"></input><StyledButton type="submit"><FontAwesomeIcon icon={solid('magnifying-glass')} /></StyledButton></SearchBox>
+                    </Box>
+                </Block>           
             </Nav>
         </Container>
     </StyledHeader>
