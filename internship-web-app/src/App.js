@@ -8,6 +8,7 @@ import Internship from './pages/internship';
 import Diary from './pages/diary';
 import Bonus from './pages/bonus';
 import Map from './pages/map';
+import 'bootstrap/dist/css/bootstrap.min.css';
   
 function App() {
 return (
