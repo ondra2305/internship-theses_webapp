@@ -22,3 +22,11 @@ export const StyledButton = styled.button`
         color: inherit;
     }
 `
+
+export const GreenStyledButton = styled(StyledButton)`
+    background-color: #218838;
+`
+
+export const RedStyledButton_Green = styled(StyledButton)`
+    background-color: #DC3545;
+`

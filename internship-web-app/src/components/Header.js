@@ -20,7 +20,7 @@ export default function Header() {
             <Nav>
                 <Box>
                     <div>
-                        <h1><Logo src="./images/logo.svg" alt="PSLIB logo"/> Správa PraXí</h1>
+                        <h1><Logo src="./images/logo.svg" alt="PSLIB logo"/> Správa Praxí</h1>
                         <Menu>
                             <MenuLink to="/home"><FontAwesomeIcon icon={solid('house')} /> Domů</MenuLink>
                             <MenuLink to="/internship"><FontAwesomeIcon icon={solid('briefcase')} /> Praxe</MenuLink>
@@ -31,12 +31,16 @@ export default function Header() {
                     </div>
                 </Box>
                 <Block>
-                    <Box>   
+                    <Box>
+                        <FontAwesomeIcon icon={solid('user')} />
                         <div>
-                            <p>Jan Novák</p>
-                            <p>user@pslib.cz</p>
+                            <p>
+                                Jan Novák<br/>
+                                jan.novak@pslib.cz
+                            </p>
                         </div>
                         <StyledButton><MenuLink to="/">Odhlásit se</MenuLink></StyledButton>
+                        <StyledButton><MenuLink to="/account">Účet</MenuLink></StyledButton>
                     </Box>
                     <Box>
                         <SearchBox><input placeholder="Hledat" name="hledat"></input><StyledButton type="submit"><FontAwesomeIcon icon={solid('magnifying-glass')} /></StyledButton></SearchBox>

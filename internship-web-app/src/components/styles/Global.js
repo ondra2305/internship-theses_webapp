@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
 
     p {
         line-height: 1;
-        margin: .5rem .5rem;
+        margin: 1rem 0;
     }
 
     h1 {
@@ -26,6 +26,12 @@ const GlobalStyles = createGlobalStyle`
         font-weight: bold;
         font-size: 36px;
         margin: 1rem 0;
+    }
+
+    h3 {
+        font-weight: semibold;
+        font-size: 20px;
+        margin: .5rem 0;
     }
 `
 

@@ -8,6 +8,7 @@ import Internship from './pages/internship';
 import Diary from './pages/diary';
 import Bonus from './pages/bonus';
 import Map from './pages/map';
+import Account from './pages/account';
 import 'bootstrap/dist/css/bootstrap.min.css';
   
 function App() {
@@ -20,6 +21,7 @@ return (
         <Route path='/diary' element={<Diary/>} />
         <Route path='/map' element={<Map/>} />
         <Route path='/bonus' element={<Bonus/>} />
+        <Route path='/account' element={<Account/>} />
     </Routes>
     </Router>
 );

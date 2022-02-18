@@ -45,5 +45,6 @@ export const MenuLink = styled(Link)`
 
     &:hover {
         background-color: #357BC2;
+        color: white;
     }
 `
