@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import {Container} from "../components/styles/Container.styled"
 import GlobalStyles from "../components/styles/Global"
 import Table from 'react-bootstrap/Table'
+import { StyledMessage } from "../components/styles/Message.styled"
 
 const theme = {
   colors: {

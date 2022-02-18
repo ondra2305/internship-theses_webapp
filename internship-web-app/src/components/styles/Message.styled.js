@@ -8,10 +8,21 @@ export const StyledMessage = styled.div`
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     margin: 1em 0;
+    font-weight: bold;
 `
 export const StyledMessage_Alert = styled(StyledMessage)`
-    background-color: rgba(220, 53, 69, 0.2);
+    background-color: rgba(220, 53, 69, 0.3);
     color: #DC3545;
+    font-weight: bold;
+
+    &:before {
+        content: "";
+    }
+`
+
+export const StyledMessage_Warn = styled(StyledMessage)`
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #FFC107;
     font-weight: bold;
 
     &:before {

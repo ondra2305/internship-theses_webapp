@@ -29,7 +29,6 @@ const Account = () => {
         <StyledMessage_Alert><FontAwesomeIcon icon={solid('triangle-exclamation')} /> Doplňte prosím chybějící údaje!</StyledMessage_Alert>
         <StyledCard>
           <h2>Správa účtu</h2>
-          <h3>Osobní údaje</h3>
             <StyledTable_NoBorder>
                 <StyledTableHead>
                     <tr>

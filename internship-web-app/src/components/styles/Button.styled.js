@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const StyledButton = styled.button`
     border-radius: 8px;
     border: 1px solid grey;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     font-size: 16px;
     background-color: #2F65B0;
     color: white;
     margin: 1em 0;
+    vertical-align: middle;
 
     &:hover {
         background-color: #357BC2
@@ -18,15 +19,26 @@ export const StyledButton = styled.button`
         display: block;
         width: 100%;
         height: 100%;
-        padding: 12px 20px;
         color: inherit;
+        vertical-align: middle;
+        padding: 20px 12px;
+        line-height: 1;
+        white-space: nowrap;
     }
 `
 
 export const GreenStyledButton = styled(StyledButton)`
     background-color: #218838;
+
+    &:hover {
+        background-color: rgba(25, 135, 84, 0.8)
+    }
 `
 
-export const RedStyledButton_Green = styled(StyledButton)`
+export const RedStyledButton = styled(StyledButton)`
     background-color: #DC3545;
+
+    &:hover {
+        background-color: rgba(220, 53, 69, 0.8)
+    }
 `

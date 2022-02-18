@@ -1,7 +1,27 @@
-import React from 'react'
+import { ThemeProvider } from "styled-components"
+import Header from "../components/Header"
+import { Container } from "../components/styles/Container.styled"
+import GlobalStyles from "../components/styles/Global"
 
-export default function Map() {
+const theme = {
+  colors: {
+    header: "#EEEEEE",
+  },
+}
+
+const Bonus = () => {
   return (
-    <div>Map</div>
+    <ThemeProvider theme = {theme}> 
+      <>
+      <GlobalStyles />
+      <Header />
+      <Container>
+          <h2>Mapa</h2>
+          <p>Placeholder</p>
+      </Container>
+      </>
+    </ThemeProvider>
   )
 }
+
+export default Bonus

@@ -15,14 +15,6 @@ export const Nav = styled.nav`
     @media (max-width: 768px) {
         flex-direction: column;
     }
-`
-
-export const Menu = styled.ul`
-    list-style-type: none;
-    padding: 0;
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 0;
 
     @media (max-width: 480px) {
         position: absolute;
@@ -31,6 +23,16 @@ export const Menu = styled.ul`
         left: 0;
         overflow-x: scroll;
     }
+`
+export const NavContainer = styled.div`
+`
+
+export const Menu = styled.ul`
+    list-style-type: none;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0;
 `
 export const MenuLink = styled(Link)`
     background-color: #2F65B0;

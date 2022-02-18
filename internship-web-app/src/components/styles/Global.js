@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Open Sans', sans-serif;
         font-size: 16px;
         margin: 0;
+
     }
 
     p {
@@ -17,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 32px;
         font-weight: bold;
         margin: 1rem 0;
     }
@@ -30,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
 
     h3 {
         font-weight: semibold;
-        font-size: 20px;
+        font-size: 24px;
         margin: .5rem 0;
     }
 `
