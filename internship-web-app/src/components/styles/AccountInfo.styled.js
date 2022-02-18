@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AccountInfo = styled.div`
+export const StyledAccountInfo = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: column;

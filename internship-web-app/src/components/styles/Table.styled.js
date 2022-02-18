@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ThemeProvider } from "styled-components"
 
 export const StyledTable = styled.table`
     border-collapse: collapse;

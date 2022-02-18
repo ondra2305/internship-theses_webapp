@@ -8,7 +8,7 @@ export const StyledButton = styled.button`
     font-size: 16px;
     background-color: #2F65B0;
     color: white;
-    margin: 1em 0;
+    margin: 1em .5em;
     vertical-align: middle;
 
     &:hover {

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SearchBox = styled.form`
+export const StyledSearchBox = styled.form`
     display: flex;
     align-items: center;
     gap: 0px;

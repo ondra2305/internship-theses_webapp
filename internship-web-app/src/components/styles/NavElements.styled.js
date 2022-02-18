@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { NavLink as Link } from "react-router-dom";
 
-export const Nav = styled.nav`
+export const StyledNav = styled.nav`
     display: flex;
     justify-content: space-between;
     gap: 16px;
@@ -48,5 +48,25 @@ export const MenuLink = styled(Link)`
     &:hover {
         background-color: #357BC2;
         color: white;
+    }
+`
+
+export const NavBlock = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
     }
 `
