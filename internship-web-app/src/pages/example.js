@@ -1,8 +1,3 @@
-import { ThemeProvider } from "styled-components"
-import { GlobalStyles } from "../global"
-
-import Header from "../components/Header"
-import { Container } from "../components/styles/Container.styled"
 import { StyledCard } from "../components/styles/Card.styled"
 import { StyledButton } from "../components/styles/Button.styled"
 import { StyledMessage } from "../components/styles/Message.styled"
@@ -12,19 +7,11 @@ import { Box } from "../components/styles/Box.styled"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
-
-const theme = {
-  colors: {
-    header: "#EEEEEE",
-  },
-}
+import { Container } from "../components/styles/Container.styled"
 
 const Example = () => {
   return (
-    <ThemeProvider theme = {theme}> 
       <>
-      <GlobalStyles />
-      <Header />
       <Container>
         <StyledMessage>Message komponenta</StyledMessage>
         <StyledMessage Alert><FontAwesomeIcon icon={solid('triangle-exclamation')} /> Chybová Message komponenta</StyledMessage>
@@ -75,7 +62,6 @@ const Example = () => {
         </StyledCard>
       </Container>
       </>
-    </ThemeProvider>
   )
 }
 

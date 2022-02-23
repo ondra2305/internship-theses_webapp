@@ -17,26 +17,48 @@ import Account from './pages/account';
 import Example from './pages/example';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { useDarkMode } from "./useDarkMode";
+import { Container } from './components/styles/Container.styled';
+import Header from './components/Header';
+import {StyledFooter} from './components/styles/Footer.styled';
+
+import Toggle from './components/Toggle';
+
 function App() {
-return (
-    <ThemeProvider theme={lightTheme}>
-        <>
-        <GlobalStyles />
-        <Router>
-        <Routes>
-            <Route exact path='/' exact element={<Login />} />
-            <Route path='/home' exact element={<Home />} />
-            <Route path='/internship' element={<Internship/>} />
-            <Route path='/diary' element={<Diary/>} />
-            <Route path='/map' element={<Map/>} />
-            <Route path='/bonus' element={<Bonus/>} />
-            <Route path='/account' element={<Account/>} />
-            <Route path='/example' element={<Example/>} />
-        </Routes>
-        </Router>
-        </>
-    </ThemeProvider>
-);
-}
+  const [theme, toggleTheme, componentMounted] = useDarkMode();
+
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+  if (!componentMounted) {
+    return <div />
+  };
+
+    return (
+        <ThemeProvider theme={themeMode}>
+            <>
+            <GlobalStyles />
+            <Router>
+              <Header>
+                <Container/>
+              </Header>
+            <Routes>
+                <Route exact path='/' exact element={<Login />} />
+                <Route path='/home' exact element={<Home />} />
+                <Route path='/internship' element={<Internship/>} />
+                <Route path='/diary' element={<Diary/>} />
+                <Route path='/map' element={<Map/>} />
+                <Route path='/bonus' element={<Bonus/>} />
+                <Route path='/account' element={<Account/>} />
+                <Route path='/example' element={<Example/>} />
+            </Routes>
+              <StyledFooter>
+                <p>Made by Ondřej Svoboda</p>
+                <Toggle theme={theme} toggleTheme={toggleTheme} />
+              </StyledFooter>
+            </Router>
+            </>
+        </ThemeProvider>
+    );
+    }
   
 export default App;

@@ -1,22 +1,9 @@
-import { ThemeProvider } from "styled-components"
-import { GlobalStyles } from "../global"
-
-import Header from "../components/Header"
-import {Container} from "../components/styles/Container.styled"
 import Table from 'react-bootstrap/Table'
-
-const theme = {
-  colors: {
-    header: "#EEEEEE",
-  },
-}
+import { Container } from "../components/styles/Container.styled"
 
 const Diary = () => {
   return (
-    <ThemeProvider theme = {theme}> 
       <>
-      <GlobalStyles />
-      <Header />
       <Container>
         <h2>Deník</h2>
         <Table striped bordered hover>
@@ -50,7 +37,6 @@ const Diary = () => {
         </Table>
       </Container>
       </>
-    </ThemeProvider>
   )
 }
 

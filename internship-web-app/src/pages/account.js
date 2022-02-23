@@ -1,8 +1,3 @@
-import { ThemeProvider } from "styled-components"
-import { GlobalStyles } from "../global"
-
-import Header from "../components/Header"
-import { Container } from "../components/styles/Container.styled"
 import { StyledCard } from "../components/styles/Card.styled"
 import { StyledButton } from "../components/styles/Button.styled"
 import { StyledMessage } from "../components/styles/Message.styled"
@@ -12,19 +7,11 @@ import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 import { StyledTable } from "../components/styles/Table.styled"
 import { StyledTableHead } from "../components/styles/Table.styled"
-
-const theme = {
-  colors: {
-    header: "#EEEEEE",
-  },
-}
+import { Container } from "../components/styles/Container.styled"
 
 const Account = () => {
   return (
-    <ThemeProvider theme = {theme}> 
       <>
-      <GlobalStyles />
-      <Header />
       <Container>
         <StyledMessage Alert><FontAwesomeIcon icon={solid('triangle-exclamation')} /> Doplňte prosím chybějící údaje!</StyledMessage>
         <StyledCard>
@@ -81,7 +68,6 @@ const Account = () => {
         </StyledCard>
       </Container>
       </>
-    </ThemeProvider>
   )
 }
 

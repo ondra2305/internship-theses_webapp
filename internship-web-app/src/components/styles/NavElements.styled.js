@@ -17,7 +17,7 @@ export const StyledNav = styled.nav`
     }
 
     @media (max-width: 480px) {
-        position: absolute;
+        position: sticky;
         bottom: 0;
         right: 0;
         left: 0;
