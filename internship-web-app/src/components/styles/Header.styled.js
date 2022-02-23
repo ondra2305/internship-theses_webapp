@@ -1,5 +1,18 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledHeader = styled.header`
-    background-color: #EEEEEE;
-`
+  ${(props) => {
+    switch (props.$theme) {
+      case "dark":
+        return css`
+            background-color: black;
+            color: white;
+        `;
+      default:
+        return css`
+            background-color: #EEEEEE;
+            color: black;
+        `;
+    }
+  }}
+`;

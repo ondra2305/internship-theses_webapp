@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const StyledCard = styled.div`
     background-color: #EEEEEE;
@@ -15,6 +15,14 @@ export const StyledCard = styled.div`
         gap: 1em;
         align-items: center;
     }
+
+    ${props => props.Big && css`
+        max-width: 1000px;
+        
+        p, h3 {
+            text-align: left;
+        }
+    `}
 `
 
 export const CardSection = styled.section`
@@ -29,13 +37,5 @@ export const CardSection = styled.section`
         div {
             display: block;
         }
-    }
-`
-
-export const BigStyledCard = styled(StyledCard)`
-    max-width: 1000px;
-    
-    p, h3 {
-        text-align: left;
     }
 `

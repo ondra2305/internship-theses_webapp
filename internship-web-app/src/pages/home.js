@@ -1,13 +1,13 @@
 import { ThemeProvider } from "styled-components"
+import { GlobalStyles } from "../global"
 import Header from "../components/Header"
 import SearchBox from "../components/SearchBox"
 
-import GlobalStyles from "../components/styles/Global"
 import {Container} from "../components/styles/Container.styled"
-import { StyledMessage, StyledMessage_Alert, StyledMessage_Warn } from "../components/styles/Message.styled"
-import { BigStyledCard } from "../components/styles/Card.styled"
+import { StyledMessage } from "../components/styles/Message.styled"
+import { StyledCard } from "../components/styles/Card.styled"
 import { CardSection } from "../components/styles/Card.styled"
-import { StyledButton, GreenStyledButton } from "../components/styles/Button.styled"
+import { StyledButton} from "../components/styles/Button.styled"
 import { StyledLink } from "../components/styles/Link.styled"
 
 const theme = {
@@ -23,9 +23,9 @@ const Home = () => {
       <GlobalStyles />
       <Header />
       <Container>
-        <StyledMessage_Alert>Nemáš ještě vytvořenou praxi v daném období.</StyledMessage_Alert>
-        <StyledMessage_Warn>Je třeba doplnit informace na vašem profilu.</StyledMessage_Warn>
-        <BigStyledCard>
+        <StyledMessage Alert>Nemáš ještě vytvořenou praxi v daném období.</StyledMessage>
+        <StyledMessage Warn>Je třeba doplnit informace na vašem profilu.</StyledMessage>
+        <StyledCard Big>
           <h2>Správa praxí</h2>
           <p>Vytvořte si praxi pomocí nasáledujících kroků. Kroky je, které je potřeba dodržet:</p>
           <h3>1. Doplnit informace</h3>
@@ -40,8 +40,8 @@ const Home = () => {
           <CardSection>
             <div>
               <SearchBox />
-              <GreenStyledButton><a>Přidat firmu</a></GreenStyledButton>
-              <GreenStyledButton><a>Přidat adresu</a></GreenStyledButton>
+              <StyledButton Green><a href="./intership.js">Přidat firmu</a></StyledButton>
+              <StyledButton Green><a href="./intership.js">Přidat adresu</a></StyledButton>
             </div>
           </CardSection>
 
@@ -50,7 +50,7 @@ const Home = () => {
             <p>Před založení praxe je nutné zkontrolovat jestli je u nás přidaná firma, kde budete praxi vykonávat.</p>
             <StyledButton><StyledLink to="/internship">Založit</StyledLink></StyledButton>
           </CardSection>
-        </BigStyledCard>
+        </StyledCard>
       </Container>
       </>
     </ThemeProvider>

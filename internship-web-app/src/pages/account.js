@@ -1,16 +1,16 @@
 import { ThemeProvider } from "styled-components"
+import { GlobalStyles } from "../global"
+
 import Header from "../components/Header"
 import { Container } from "../components/styles/Container.styled"
-import GlobalStyles from "../components/styles/Global"
 import { StyledCard } from "../components/styles/Card.styled"
 import { StyledButton } from "../components/styles/Button.styled"
-import { StyledMessage, StyledMessage_Alert } from "../components/styles/Message.styled"
+import { StyledMessage } from "../components/styles/Message.styled"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 
-import Table from "../components/Table"
-import { StyledTable_NoBorder } from "../components/styles/Table.styled"
+import { StyledTable } from "../components/styles/Table.styled"
 import { StyledTableHead } from "../components/styles/Table.styled"
 
 const theme = {
@@ -26,10 +26,10 @@ const Account = () => {
       <GlobalStyles />
       <Header />
       <Container>
-        <StyledMessage_Alert><FontAwesomeIcon icon={solid('triangle-exclamation')} /> Doplňte prosím chybějící údaje!</StyledMessage_Alert>
+        <StyledMessage Alert><FontAwesomeIcon icon={solid('triangle-exclamation')} /> Doplňte prosím chybějící údaje!</StyledMessage>
         <StyledCard>
           <h2>Správa účtu</h2>
-            <StyledTable_NoBorder>
+            <StyledTable NoBorder>
                 <StyledTableHead>
                     <tr>
                         <td>Osobní údaje</td>
@@ -49,35 +49,35 @@ const Account = () => {
                     <tr>
                         <td><FontAwesomeIcon icon={solid('venus-mars')} /> Pohlaví</td>
                         <td>Muž</td>
-                        <td><StyledButton><a onclick=""><FontAwesomeIcon icon={solid('pen')} /> Upravit</a></StyledButton></td>
+                        <td><StyledButton><a href="#" onClick=""><FontAwesomeIcon icon={solid('pen')} /> Upravit</a></StyledButton></td>
                     </tr>
                     <tr>
                         <td><FontAwesomeIcon icon={solid('phone')} /> Telefon</td>
                         <td>Nevyplněno</td>
-                        <td><StyledButton><a onclick=""><FontAwesomeIcon icon={solid('pen')} /> Upravit</a></StyledButton></td>
+                        <td><StyledButton><a href="#" onClick=""><FontAwesomeIcon icon={solid('pen')} /> Upravit</a></StyledButton></td>
                     </tr>
                     <tr>
                         <td><FontAwesomeIcon icon={solid('location-dot')} /> Adresa</td>
                         <td>Nevyplněno</td>
-                        <td><StyledButton><a onclick=""><FontAwesomeIcon icon={solid('pen')} /> Upravit</a></StyledButton></td>
+                        <td><StyledButton><a href="#" onClick=""><FontAwesomeIcon icon={solid('pen')} /> Upravit</a></StyledButton></td>
                     </tr>
                     <tr>
                         <td><FontAwesomeIcon icon={solid('cake-candles')} /> Datum narození</td>
                         <td>Nevyplněno</td>
-                        <td><StyledButton><a onclick=""><FontAwesomeIcon icon={solid('pen')} /> Upravit</a></StyledButton></td>
+                        <td><StyledButton><a href="#" onClick=""><FontAwesomeIcon icon={solid('pen')} /> Upravit</a></StyledButton></td>
                     </tr>
                     <tr>
                         <td><FontAwesomeIcon icon={solid('chalkboard-user')} /> Třída</td>
                         <td>Nevyplněno</td>
-                        <td><StyledButton><a onclick=""><FontAwesomeIcon icon={solid('pen')} /> Upravit</a></StyledButton></td>
+                        <td><StyledButton><a href="#" onClick=""><FontAwesomeIcon icon={solid('pen')} /> Upravit</a></StyledButton></td>
                     </tr>
                     <tr>
                         <td><FontAwesomeIcon icon={solid('graduation-cap')} /> Obor</td>
                         <td>Nevyplněno</td>
-                        <td><StyledButton><a onclick=""><FontAwesomeIcon icon={solid('pen')} /> Upravit</a></StyledButton></td>
+                        <td><StyledButton><a href="#" onClick=""><FontAwesomeIcon icon={solid('pen')} /> Upravit</a></StyledButton></td>
                     </tr>
                 </tbody>
-            </StyledTable_NoBorder>
+            </StyledTable>
         </StyledCard>
       </Container>
       </>

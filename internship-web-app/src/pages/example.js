@@ -1,16 +1,17 @@
 import { ThemeProvider } from "styled-components"
+import { GlobalStyles } from "../global"
+
 import Header from "../components/Header"
 import { Container } from "../components/styles/Container.styled"
-import GlobalStyles from "../components/styles/Global"
 import { StyledCard } from "../components/styles/Card.styled"
-import { StyledButton, RedStyledButton, GreenStyledButton } from "../components/styles/Button.styled"
-import { StyledMessage, StyledMessage_Alert, StyledMessage_Warn } from "../components/styles/Message.styled"
-import { StyledTable, StyledTable_NoBorder } from "../components/styles/Table.styled"
+import { StyledButton } from "../components/styles/Button.styled"
+import { StyledMessage } from "../components/styles/Message.styled"
+import { StyledTable } from "../components/styles/Table.styled"
 import { StyledTableHead } from "../components/styles/Table.styled"
 import { Box } from "../components/styles/Box.styled"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 const theme = {
   colors: {
@@ -26,11 +27,11 @@ const Example = () => {
       <Header />
       <Container>
         <StyledMessage>Message komponenta</StyledMessage>
-        <StyledMessage_Alert><FontAwesomeIcon icon={solid('triangle-exclamation')} /> Chybová Message komponenta</StyledMessage_Alert>
-        <StyledMessage_Warn><FontAwesomeIcon icon={solid('circle-exclamation')} /> Varovná Message komponenta</StyledMessage_Warn>
-        <StyledCard>
+        <StyledMessage Alert><FontAwesomeIcon icon={solid('triangle-exclamation')} /> Chybová Message komponenta</StyledMessage>
+        <StyledMessage Warn><FontAwesomeIcon icon={solid('circle-exclamation')} /> Varovná Message komponenta</StyledMessage>
+        <StyledCard Big>
           <h2>Card komponenta</h2>
-            <StyledTable_NoBorder>
+            <StyledTable NoBorder>
                 <StyledTableHead>
                     <tr>
                         <td colspan="2">TableNoBorder komponenta</td>
@@ -46,7 +47,7 @@ const Example = () => {
                         <td>jan.novak@pslib.cz</td>
                     </tr>
                 </tbody>
-            </StyledTable_NoBorder>
+            </StyledTable>
             <br/>
             <StyledTable>
                 <StyledTableHead>
@@ -67,9 +68,9 @@ const Example = () => {
             </StyledTable>
             <br/>
             <Box>
-            <StyledButton><a>Button komponenta</a></StyledButton>
-            <RedStyledButton><a>Červená Button komponenta</a></RedStyledButton>
-            <GreenStyledButton><a>Zelená Button komponenta</a></GreenStyledButton>
+            <StyledButton to="/example"><a href="./example.js">Button komponenta</a></StyledButton>
+            <StyledButton Red to="/example"><a href="./example.js">Červená Button komponenta</a></StyledButton>
+            <StyledButton Green to="/example"><a href="./example.js">Zelená Button komponenta</a></StyledButton>
             </Box>
         </StyledCard>
       </Container>

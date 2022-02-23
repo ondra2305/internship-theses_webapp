@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledButton = styled.button`
     border-radius: 8px;
@@ -24,7 +24,24 @@ export const StyledButton = styled.button`
         padding: 20px 12px;
         line-height: 1;
         white-space: nowrap;
+        text-decoration: none;
     }
+
+    ${props => props.Red && css`
+        background-color: #DC3545;
+
+        &:hover {
+            background-color: rgba(220, 53, 69, 0.8)
+        }
+    `}
+
+    ${props => props.Green && css`
+    background-color: #218838;
+
+    &:hover {
+        background-color: rgba(25, 135, 84, 0.8)
+    }
+    `}
 `
 
 export const GreenStyledButton = styled(StyledButton)`

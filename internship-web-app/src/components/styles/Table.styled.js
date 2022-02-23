@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const StyledTable = styled.table`
     border-collapse: collapse;
@@ -23,12 +23,12 @@ export const StyledTable = styled.table`
     td button {
         margin: 0;
     }
-`
 
-export const StyledTable_NoBorder = styled(StyledTable)`
-    td, th {
-        border: none;
-    }
+    ${props => props.NoBorder && css`
+        td, th {
+            border: none;
+        }
+    `}
 `
 
 export const StyledTableHead = styled.thead`
