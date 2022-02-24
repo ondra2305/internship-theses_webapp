@@ -7,6 +7,8 @@ export const lightTheme = {
     cardBorder: 'grey',
     toggleBorder: 'grey',
     gradient: 'linear-gradient(white, #E2E2E2)',
+    table1: '#CCCCCC',
+    table2: '#CCCCCC',
   }
   
   export const darkTheme = {
@@ -18,4 +20,6 @@ export const lightTheme = {
     cardBorder: 'rgb(84, 91, 94)',
     toggleBorder: '#d1cdc7',
     gradient: 'linear-gradient(#181A1B, #212529)',
+    table1: 'rgb(140, 130, 115)',
+    table2: '#181A1B',
   }

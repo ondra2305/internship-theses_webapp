@@ -28,6 +28,19 @@ export const StyledCard = styled.div`
         margin-top: 3em;
         margin-bottom: 3em;
 `}
+
+    ${props => props.Left && css`
+        margin-left: 0;
+
+        * {
+            text-align: left;
+        }
+
+        h2, h3 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    `}
 `
 
 export const CardSection = styled.section`

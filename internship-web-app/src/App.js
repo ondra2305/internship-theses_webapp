@@ -1,5 +1,4 @@
 import React from 'react';
-import {useState} from 'react'
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyles } from './global';
@@ -18,6 +17,8 @@ import Example from './pages/example';
 import TeacherHome from './pages/teacherHome';
 import TeacherInternship from './pages/teacherInternship';
 import TeacherAccount from './pages/teacherAccount';
+import Inspect from './pages/inspect';
+import Create from './pages/create';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -54,6 +55,8 @@ function App() {
                 <Route path='/bonus' element={<Bonus/>} />
                 <Route path='/account' element={<Account/>} />
                 <Route path='/example' element={<Example/>} />
+                <Route path='/inspect' element={<Inspect/>} />
+                <Route path='/create' element={<Create/>} />
                 <Route path='/teacherHome' exact element={<TeacherHome />} />
                 <Route path='/teacherInternship' element={<TeacherInternship/>} />
                 <Route path='/teacherAccount' element={<TeacherAccount/>} />

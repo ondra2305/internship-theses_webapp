@@ -7,6 +7,7 @@ export const StyledAccountInfo = styled.div`
     align-items: flex-end;
     align-self: flex-end;
     gap: 16px;
+    margin: .5em 0;
 
     @media (max-width: 768px) {
         flex-direction: row;

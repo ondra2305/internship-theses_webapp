@@ -4,7 +4,9 @@ export const StyledTable = styled.table`
     border-collapse: collapse;
     width: 100%;
     font-size: 18px;
-    border: 1px solid #dddddd;
+    border: 1px solid #cccccc;
+    overflow-x: scroll;
+    margin: 1em 0;
 
     td, th {
         text-align: left;
@@ -13,11 +15,7 @@ export const StyledTable = styled.table`
     }
       
     tr:nth-child(even):not(:first-child) {
-        background-color: #dddddd;
-    }
-
-    td:nth-child(2) {
-        font-weight: bold;
+        background-color: ${({ theme }) => theme.table1};
     }
 
     td button {
@@ -29,18 +27,37 @@ export const StyledTable = styled.table`
             border: none;
         }
     `}
+
+    ${props => props.Bold && css`
+        td:first-child {
+            font-weight: bold;
+        }
+
+        td:nth-child(2) {
+            font-weight: normal;
+        }
+`}
 `
 
 export const StyledTableHead = styled.thead`
     font-weight: bold;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
     text-align: center;
-    background-color: #dddddd;
+    background-color: #cccccc;
+
+    ${props => props.Symetric && css`
+    font-weight: bold;
+
+    th {
+        width: 50%;
+        background-color: #cccccc;
+    }
+`}
 `
 
 export const StyledTableFoot = styled.tfoot`
     font-weight: bold;
-    border-bottom: 1px solid black;
+    border-top: 3px solid black;
     text-align: center;
     background-color: #dddddd;
 `

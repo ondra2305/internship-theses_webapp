@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 
 export const Flex = styled.div`
     display: flex;
@@ -7,6 +7,19 @@ export const Flex = styled.div`
     
     form {
         align-self: flex-end;
+    }
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        text-align: left;
+
+        form {
+            align-self: flex-start;
+        }
+
+        button {
+            margin: 0.5em;
+        }
     }
 `
 

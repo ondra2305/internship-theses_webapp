@@ -5,6 +5,7 @@ export const StyledNav = styled.nav`
     display: flex;
     justify-content: space-between;
     gap: 16px;
+    overflow-x: auto;
 
     h1 {
         font-size: 2em;

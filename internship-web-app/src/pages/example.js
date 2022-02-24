@@ -8,6 +8,7 @@ import SearchBox from "../components/SearchBox"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+
 import { Container } from "../components/styles/Container.styled"
 
 const Example = () => {

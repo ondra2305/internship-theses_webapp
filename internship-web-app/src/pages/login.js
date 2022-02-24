@@ -1,7 +1,7 @@
 import { StyledCard } from "../components/styles/Card.styled"
 import { StyledButton } from "../components/styles/Button.styled"
 import { LogoFull } from "../components/styles/Logo.styled"
-import { MenuLink } from "../components/styles/NavElements.styled"
+import { StyledLink } from "../components/styles/Link.styled"
 
 const Login = () => {
   return (
@@ -11,8 +11,8 @@ const Login = () => {
           <h2>Správa Praxí</h2>
           <p>Školní aplikace na správu Praxí</p>
           <p>Pro přístup se prosím přihlaste.</p>
-          <StyledButton to="/home"><MenuLink to="/home">Přihlásit se</MenuLink></StyledButton>
-          <StyledButton to="/teacherHome"><MenuLink to="/teacherHome">Učitel</MenuLink></StyledButton>
+          <StyledButton to="/home"><StyledLink to="/home">Přihlásit se</StyledLink></StyledButton>
+          <StyledButton Grey to="/teacherHome"><StyledLink to="/teacherHome">Učitel Test</StyledLink></StyledButton>
         </StyledCard>
       </>
   )

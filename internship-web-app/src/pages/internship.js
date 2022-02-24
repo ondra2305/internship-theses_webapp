@@ -4,7 +4,8 @@ import { StyledTableHead, StyledTableFoot } from "../components/styles/Table.sty
 
 import { StyledButton } from "../components/styles/Button.styled"
 import { Flex } from "../components/styles/Flex.styled"
-import SearchBox from '../components/SearchBox'
+import SearchBox from "../components/SearchBox"
+import { StyledLink } from "../components/styles/Link.styled"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
@@ -17,9 +18,9 @@ const Internship = () => {
         <Flex>
           <SearchBox/>
           <div>
-            <StyledButton Green><a><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat</a></StyledButton>
-            <StyledButton Grey><a><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat firmu</a></StyledButton>
-            <StyledButton Grey><a><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat adresu</a></StyledButton>
+            <StyledButton Green><StyledLink to="/create"><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat</StyledLink></StyledButton>
+            <StyledButton Grey><StyledLink to="/create"><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat firmu</StyledLink></StyledButton>
+            <StyledButton Grey><StyledLink to="/create"><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat adresu</StyledLink></StyledButton>
           </div>
         </Flex>
         <StyledTable>
@@ -38,35 +39,35 @@ const Internship = () => {
               <td>Vyskočilova 1561/4a, 14000 Praha 4</td>
               <td>Dlouhodobé praxe 4. ročníků</td>
               <td>Ondřej Svoboda</td>
-              <td><StyledButton Green><a href="#"><FontAwesomeIcon icon={solid('circle-plus')} />  Aktivovat</a></StyledButton> <StyledButton Red><a href="#"><FontAwesomeIcon icon={solid('trash-can')} />  Smazat</a></StyledButton></td>
+              <td><StyledButton Green><StyledLink to="/create"><FontAwesomeIcon icon={solid('circle-plus')} />  Aktivovat</StyledLink></StyledButton> <StyledButton Red><StyledLink to="/create"><FontAwesomeIcon icon={solid('trash-can')} />  Smazat</StyledLink></StyledButton></td>
             </tr>
             <tr>
               <td>Další firma</td>
               <td>Další adresa</td>
               <td>Dlouhodobé praxe 4. ročníků</td>
               <td>Další student</td>
-              <td><StyledButton Green><a href="#"><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat se</a></StyledButton></td>
+              <td><StyledButton Green><StyledLink to="/create"><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat se</StyledLink></StyledButton></td>
             </tr>
             <tr>
             <td>Další firma</td>
               <td>Další adresa</td>
               <td>Dlouhodobé praxe 4. ročníků</td>
               <td>Další student</td>
-              <td><StyledButton Green><a href="#"><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat se</a></StyledButton></td>
+              <td><StyledButton Green><StyledLink to="/create"><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat se</StyledLink></StyledButton></td>
             </tr>
             <tr>
             <td>Další firma</td>
               <td>Další adresa</td>
               <td>Dlouhodobé praxe 4. ročníků</td>
               <td>Další student</td>
-              <td><StyledButton Green><a href="#"><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat se</a></StyledButton></td>
+              <td><StyledButton Green><StyledLink to="/create"><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat se</StyledLink></StyledButton></td>
             </tr>
             <tr>
             <td>Další firma</td>
               <td>Další adresa</td>
               <td>Dlouhodobé praxe 4. ročníků</td>
               <td>Další student</td>
-              <td><StyledButton Green><a href="#"><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat se</a></StyledButton></td>
+              <td><StyledButton Green><StyledLink to="/create"><FontAwesomeIcon icon={solid('circle-plus')} /> Přidat se</StyledLink></StyledButton></td>
             </tr>
           </tbody>
           <StyledTableFoot>

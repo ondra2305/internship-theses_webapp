@@ -27,6 +27,12 @@ export const StyledButton = styled.button`
         text-decoration: none;
     }
 
+    ${props => props.Small && css`
+        a {
+            padding: 10px 6px;
+        }
+`}
+
     ${props => props.Red && css`
         background-color: #DC3545;
 
@@ -44,7 +50,7 @@ export const StyledButton = styled.button`
     `}
 
     ${props => props.Grey && css`
-    background-color: #A9A9A9;
+    background-color: #999999;
 
     &:hover {
         background-color: rgba(169, 169, 169, 0.8)

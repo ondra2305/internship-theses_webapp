@@ -1,40 +1,43 @@
-import Table from 'react-bootstrap/Table'
 import { Container } from "../components/styles/Container.styled"
+
+import { StyledTable } from "../components/styles/Table.styled"
+import { StyledTableHead } from "../components/styles/Table.styled"
 
 const Diary = () => {
   return (
       <>
       <Container>
         <h2>Deník</h2>
-        <Table striped bordered hover>
-          <thead>
+        <StyledTable>
+          <StyledTableHead>
             <tr>
-              <th>#</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Username</th>
+              <th>Placeholder</th>
+              <th>Placeholder</th>
+              <th>Placeholder</th>
+              <th>Placeholder</th>
             </tr>
-          </thead>
+          </StyledTableHead>
           <tbody>
             <tr>
-              <td>1</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>Placeholder</td>
+              <td>Placeholder</td>
+              <td>Placeholder</td>
+              <td>Placeholder</td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td>Placeholder</td>
+              <td>Placeholder</td>
+              <td>Placeholder</td>
+              <td>Placeholder</td>
             </tr>
             <tr>
-              <td>3</td>
-              <td colSpan={2}>Larry the Bird</td>
-              <td>@twitter</td>
+              <td>Placeholder</td>
+              <td>Placeholder</td>
+              <td>Placeholder</td>
+              <td>Placeholder</td>
             </tr>
           </tbody>
-        </Table>
+        </StyledTable>
       </Container>
       </>
   )

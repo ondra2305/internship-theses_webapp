@@ -1,4 +1,3 @@
-import { css } from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
@@ -21,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
 
     p {
         line-height: 1;
-        margin: 1rem 0;
+        margin: .5rem 0;
     }
 
     h1 {
@@ -33,13 +32,14 @@ export const GlobalStyles = createGlobalStyle`
     h2 {
         font-weight: bold;
         font-size: 36px;
-        margin: 1.5rem 0;
+        margin: 1rem 0;
     }
 
     h3 {
         font-weight: semibold;
         font-size: 24px;
-        margin: .5rem 0;
+        margin-top: 1em;
+        margin-bottom: 0;
         padding: .5rem;
         border-bottom: 1px solid black;
         text-transform: uppercase;
