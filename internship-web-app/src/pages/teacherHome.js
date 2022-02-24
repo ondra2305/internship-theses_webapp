@@ -7,7 +7,7 @@ import { StyledButton} from "../components/styles/Button.styled"
 import { StyledLink } from "../components/styles/Link.styled"
 import { Container } from "../components/styles/Container.styled"
 
-const Home = () => {
+const TeacherHome = () => {
   return (
       <>
       <Container>
@@ -41,13 +41,9 @@ const Home = () => {
             </div>
           </CardSection>
         </StyledCard>
-        <StyledCard Big>
-          <h2>Aktivní praxe</h2>
-          <h3>Microsoft s.r.o.</h3>
-        </StyledCard>
       </Container>
       </>
   )
 }
 
-export default Home
+export default TeacherHome

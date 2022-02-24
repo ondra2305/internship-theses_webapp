@@ -15,6 +15,10 @@ import Bonus from './pages/bonus';
 import Map from './pages/map';
 import Account from './pages/account';
 import Example from './pages/example';
+import TeacherHome from './pages/teacherHome';
+import TeacherInternship from './pages/teacherInternship';
+import TeacherAccount from './pages/teacherAccount';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { useDarkMode } from "./useDarkMode";
@@ -50,6 +54,9 @@ function App() {
                 <Route path='/bonus' element={<Bonus/>} />
                 <Route path='/account' element={<Account/>} />
                 <Route path='/example' element={<Example/>} />
+                <Route path='/teacherHome' exact element={<TeacherHome />} />
+                <Route path='/teacherInternship' element={<TeacherInternship/>} />
+                <Route path='/teacherAccount' element={<TeacherAccount/>} />
             </Routes>
               <StyledFooter>
                 <p>Made by Ondřej Svoboda</p>

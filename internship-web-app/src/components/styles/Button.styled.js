@@ -42,6 +42,14 @@ export const StyledButton = styled.button`
         background-color: rgba(25, 135, 84, 0.8)
     }
     `}
+
+    ${props => props.Grey && css`
+    background-color: #A9A9A9;
+
+    &:hover {
+        background-color: rgba(169, 169, 169, 0.8)
+    }
+    `}
 `
 
 export const GreenStyledButton = styled(StyledButton)`

@@ -35,4 +35,12 @@ export const StyledTableHead = styled.thead`
     font-weight: bold;
     border-bottom: 1px solid black;
     text-align: center;
+    background-color: #dddddd;
+`
+
+export const StyledTableFoot = styled.tfoot`
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    text-align: center;
+    background-color: #dddddd;
 `

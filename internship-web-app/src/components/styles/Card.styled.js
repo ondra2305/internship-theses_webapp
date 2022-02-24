@@ -23,6 +23,11 @@ export const StyledCard = styled.div`
             text-align: left;
         }
     `}
+
+    ${props => props.Margin && css`
+        margin-top: 3em;
+        margin-bottom: 3em;
+`}
 `
 
 export const CardSection = styled.section`

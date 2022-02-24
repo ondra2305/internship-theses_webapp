@@ -9,7 +9,7 @@ import { StyledTable } from "../components/styles/Table.styled"
 import { StyledTableHead } from "../components/styles/Table.styled"
 import { Container } from "../components/styles/Container.styled"
 
-const Account = () => {
+const TeacherAccount = () => {
   return (
       <>
       <Container>
@@ -71,4 +71,4 @@ const Account = () => {
   )
 }
 
-export default Account
+export default TeacherAccount

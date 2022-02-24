@@ -4,6 +4,7 @@ import { StyledMessage } from "../components/styles/Message.styled"
 import { StyledTable } from "../components/styles/Table.styled"
 import { StyledTableHead } from "../components/styles/Table.styled"
 import { Box } from "../components/styles/Box.styled"
+import SearchBox from "../components/SearchBox"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
@@ -18,6 +19,11 @@ const Example = () => {
         <StyledMessage Warn><FontAwesomeIcon icon={solid('circle-exclamation')} /> Varovná Message komponenta</StyledMessage>
         <StyledCard Big>
           <h2>Card komponenta</h2>
+            <div>
+                <SearchBox/>
+                <p>Searchbox komponenta</p>
+            </div>
+            <br/>
             <StyledTable NoBorder>
                 <StyledTableHead>
                     <tr>

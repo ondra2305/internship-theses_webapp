@@ -1,15 +1,17 @@
+import Table from 'react-bootstrap/Table'
 import { Container } from "../components/styles/Container.styled"
 import { StyledTable } from "../components/styles/Table.styled"
 import { StyledTableHead, StyledTableFoot } from "../components/styles/Table.styled"
 
 import { StyledButton } from "../components/styles/Button.styled"
+import { StyledMessage } from "../components/styles/Message.styled"
 import { Flex } from "../components/styles/Flex.styled"
 import SearchBox from '../components/SearchBox'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 
-const Internship = () => {
+const TeacherInternship = () => {
   return (
       <>
       <Container>
@@ -38,7 +40,7 @@ const Internship = () => {
               <td>Vyskočilova 1561/4a, 14000 Praha 4</td>
               <td>Dlouhodobé praxe 4. ročníků</td>
               <td>Ondřej Svoboda</td>
-              <td><StyledButton Green><a href="#"><FontAwesomeIcon icon={solid('circle-plus')} />  Aktivovat</a></StyledButton> <StyledButton Red><a href="#"><FontAwesomeIcon icon={solid('trash-can')} />  Smazat</a></StyledButton></td>
+              <td><StyledButton Green><a href="#"><FontAwesomeIcon icon={solid('circle-plus')} />  Přidat se</a></StyledButton></td>
             </tr>
             <tr>
               <td>Další firma</td>
@@ -84,4 +86,4 @@ const Internship = () => {
   )
 }
 
-export default Internship
+export default TeacherInternship

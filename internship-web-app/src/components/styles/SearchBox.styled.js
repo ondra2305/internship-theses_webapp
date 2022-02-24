@@ -6,7 +6,7 @@ export const StyledSearchBox = styled.form`
     gap: 0px;
     text-align: right;
     align-self: flex-end;
-    width: 300px;
+    width: 320px;
 
     input {
         padding: 10px;
