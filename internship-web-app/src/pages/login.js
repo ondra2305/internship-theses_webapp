@@ -7,7 +7,7 @@ const Login = () => {
   return (
       <>
         <StyledCard Margin>
-          <LogoFull src="./MP2021-22_Svoboda-Ondrej_Sjednoceni-uzivatelskych-rozhrani-www-aplikaci-PraCe-a-PraXe/images/logo-full.svg"/>
+          <LogoFull src="./images/logo-full.svg"/>
           <h2>Správa Praxí</h2>
           <p>Školní aplikace na správu Praxí</p>
           <p>Pro přístup se prosím přihlaste.</p>

@@ -43,14 +43,14 @@ export const StyledTableHead = styled.thead`
     font-weight: bold;
     border-bottom: 3px solid black;
     text-align: center;
-    background-color: #cccccc;
+    background-color: ${({ theme }) => theme.table1};
 
     ${props => props.Symetric && css`
     font-weight: bold;
 
     th {
         width: 50%;
-        background-color: #cccccc;
+        background-color: ${({ theme }) => theme.table1};
     }
 `}
 `

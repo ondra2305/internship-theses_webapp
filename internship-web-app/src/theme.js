@@ -20,6 +20,6 @@ export const lightTheme = {
     cardBorder: 'rgb(84, 91, 94)',
     toggleBorder: '#d1cdc7',
     gradient: 'linear-gradient(#181A1B, #212529)',
-    table1: 'rgb(140, 130, 115)',
+    table1: 'rgb(53, 57, 59)',
     table2: '#181A1B',
   }
