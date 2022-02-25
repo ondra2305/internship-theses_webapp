@@ -7,6 +7,8 @@ MP2021-22_Svoboda-Ondrej_Sjednoceni-uzivatelskych-rozhrani-www-aplikaci-PraCe-a-
 ### Školní rok 2021/2022
 ---------------------------
 
+[Demo aplikace PraXe si můžete zobrazit zde](https://pslib-cz.github.io/MP2021-22_Svoboda-Ondrej_Sjednoceni-uzivatelskych-rozhrani-www-aplikaci-PraCe-a-PraXe/)
+
 ## ÚVOD
 Práce se zabývá optimalizací uživatelského rozhraní školní aplikace pro vedení a správu dlouhodobých prací. Dále také úpravou UX aplikace pro evidenci praxí, tak aby mělo stejné vizuální a funkční prvky. Měl by vzniknout katalog „komponentů“, neboli prvků, které budou využitelné při tvorbě dalších školních aplikací.
 
