@@ -15,7 +15,7 @@ export default function Header() {
         <Container>
             <NavBlock>
                 <NavContainer>
-                    <h1><Logo src="./images/logo.svg" alt="PSLIB logo"/> Správa Praxí</h1>
+                    <h1><Logo src="./MP2021-22_Svoboda-Ondrej_Sjednoceni-uzivatelskych-rozhrani-www-aplikaci-PraCe-a-PraXe/images/logo.svg" alt="PSLIB logo"/> Správa Praxí</h1>
                     <Nav />     
                 </NavContainer>
                 <AccountInfo />
