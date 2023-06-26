@@ -7,4 +7,4 @@ Práce se zabývá optimalizací uživatelského rozhraní školní aplikace pro
 
 [Odkaz na prácí a grafický návrh](https://drive.google.com/drive/folders/1Zl0xKd8xJEw7ajgXXaIY8Il2m1TX2ZgM?usp=sharing)
 
-[Demo aplikace PraXe si můžete zobrazit zde](https://pslib-cz.github.io/MP2021-22_Svoboda-Ondrej_Sjednoceni-uzivatelskych-rozhrani-www-aplikaci-PraCe-a-PraXe/)
+[Demo aplikace PraXe si můžete zobrazit zde](https://ondra2305.github.io/internship-theses_webapp/)
