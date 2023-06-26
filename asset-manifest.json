@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/internship-theses_webapp/static/css/main.e5887b4f.css",
+    "main.js": "/internship-theses_webapp/static/js/main.f0cf275c.js",
+    "static/js/787.749f879f.chunk.js": "/internship-theses_webapp/static/js/787.749f879f.chunk.js",
+    "index.html": "/internship-theses_webapp/index.html",
+    "main.e5887b4f.css.map": "/internship-theses_webapp/static/css/main.e5887b4f.css.map",
+    "main.f0cf275c.js.map": "/internship-theses_webapp/static/js/main.f0cf275c.js.map",
+    "787.749f879f.chunk.js.map": "/internship-theses_webapp/static/js/787.749f879f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5887b4f.css",
+    "static/js/main.f0cf275c.js"
+  ]
+}
